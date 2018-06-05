@@ -4,7 +4,7 @@
 
 Mapping Violence recovers lost and obscured cases of racial violence in Texas from 1900 to 1930, a period of now largely forgotten bloodshed. Making these histories public is a crucial step towards reckoning with the long legacies of violence.
 
-This timeline 
+This timeline documents actions by survivors (left) and the state (right) in remembering or erasing the Porvernir Massacre.
 
 
 
