@@ -1,76 +1,5 @@
-/* -------------------------------- 
 
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #e9f0f5;
-}
-
-a {
-  color: #acb7c0;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-}
-
-/* -------------------------------- 
-
-Patterns - reusable parts of our design
-
--------------------------------- */
-@media only screen and (min-width: 1170px) {
-  .cd-is-hidden {
-    visibility: hidden;
-  }
-}
-
-/* -------------------------------- 
-
-Resource style 
-
--------------------------------- */
-header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
-}
-
-header h1 {
-  color: white;
-  font-size: 1.8rem;
-}
-
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-  }
-  header h1 {
-    font-size: 2.4rem;
-  }
-}
-
 .cd-timeline {
   overflow: hidden;
   margin: 2em auto;
@@ -217,7 +146,7 @@ header h1 {
   }
 }
 
-.cd-timeline__content {
+.cd-timeline__content2 {
   position: relative;
   margin-left: 60px;
   background: white;
@@ -227,14 +156,14 @@ header h1 {
           box-shadow: 0 3px 0 #d7e4ed;
 }
 
-.cd-timeline__content:after {
+.cd-timeline__content2:after {
   /* clearfix */
   content: "";
   display: table;
   clear: both;
 }
 
-.cd-timeline__content::before {
+.cd-timeline__content2::before {
   /* triangle next to content block */
   content: '';
   position: absolute;
@@ -246,19 +175,142 @@ header h1 {
   border-right: 7px solid white;
 }
 
-.cd-timeline__content h2 {
+.cd-timeline__content2 h2, h3, h4 {
   color: #303e49;
 }
 
-.cd-timeline__content p,
+.cd-timeline__content2 p,
 .cd-timeline__read-more,
 .cd-timeline__date {
-  font-size: 1.3rem;
+  color: #212529;
 }
 
-.cd-timeline__content p {
+.cd-timeline__content2 p {
   margin: 1em 0;
   line-height: 1.6;
+  color: #212529;
+}
+
+.cd-timeline__read-more,
+.cd-timeline__date {
+  display: inline-block;
+  color: #212529;
+}
+
+.cd-timeline__read-more {
+  float: right;
+  padding: .8em 1em;
+  background: #acb7c0;
+  color: white;
+  border-radius: 0.25em;
+}
+
+.cd-timeline__read-more:hover {
+  background-color: #bac4cb;
+}
+
+.cd-timeline__date {
+  padding: .8em 0;
+  opacity: .7;
+  color: #212529;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-timeline__content2 h2, h3, h4 {
+  }
+  .cd-timeline__content2 p {
+    color: #212529;
+  }
+  .cd-timeline__read-more,
+  .cd-timeline__date {
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__content2 {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  .cd-timeline__content2::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: white;
+  }
+  .cd-timeline__read-more {
+    float: left;
+  }
+  .cd-timeline__date {
+    position: relative;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    color: #343a40;
+  }
+    .cd-timeline__block .cd-timeline__content2 {
+    float: left;
+  }
+  .cd-timeline__block .cd-timeline__read-more {
+    float: right;
+  }
+  .cd-timeline__block .cd-timeline__date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .cd-timeline__content2.cd-timeline__content--bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+            animation: cd-bounce-2 0.6s;
+  }
+}
+.cd-timeline__content1 {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 1em;
+  -webkit-box-shadow: 0 3px 0 #d7e4ed;
+          box-shadow: 0 3px 0 #d7e4ed;
+}
+
+.cd-timeline__content1:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline__content1::before {
+  /* triangle next to content block */
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+}
+
+.cd-timeline__content1 h2, h3, h4 {
+  color: #303e49;
+}
+
+.cd-timeline__content1 p,
+.cd-timeline__read-more,
+.cd-timeline__date {
+}
+
+.cd-timeline__content1 p {
+  margin: 1em 0;
+  line-height: 1.6;
+  color: #212529;
 }
 
 .cd-timeline__read-more,
@@ -285,20 +337,17 @@ header h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  .cd-timeline__content h2 {
-    font-size: 2rem;
+  .cd-timeline__content1 h2 {
   }
-  .cd-timeline__content p {
-    font-size: 1.6rem;
+  .cd-timeline__content1 p {
   }
   .cd-timeline__read-more,
   .cd-timeline__date {
-    font-size: 1.4rem;
   }
 }
 
 @media only screen and (min-width: 1170px) {
-  .cd-timeline__content {
+  .cd-timeline__content1 {
     margin-left: 0;
     padding: 1.6em;
     width: 45%;
@@ -306,7 +355,7 @@ header h1 {
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
   }
-  .cd-timeline__content::before {
+  .cd-timeline__content1::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
@@ -320,27 +369,26 @@ header h1 {
     width: 100%;
     left: 122%;
     top: 6px;
-    font-size: 1.6rem;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__content {
+  .cd-timeline__block .cd-timeline__content1 {
     float: right;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
+  .cd-timeline__block .cd-timeline__content1::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
     border-right-color: white;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
+  .cd-timeline__block .cd-timeline__read-more {
     float: right;
   }
-  .cd-timeline__block:nth-child(even) .cd-timeline__date {
+  .cd-timeline__block .cd-timeline__date {
     left: auto;
     right: 122%;
     text-align: right;
   }
-  .cd-timeline__content.cd-timeline__content--bounce-in {
+  .cd-timeline__content1.cd-timeline__content--bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;
             animation: cd-bounce-2 0.6s;
@@ -349,7 +397,7 @@ header h1 {
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
+  .cd-timeline__block .cd-timeline__content1.cd-timeline__content--bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
             animation: cd-bounce-2-inverse 0.6s;
   }
