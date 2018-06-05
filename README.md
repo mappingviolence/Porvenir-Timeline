@@ -1,7 +1,15 @@
 
 
 ## About
-This timeline makes use of two existing templates from @CodyHouse and @Bootstrap. 
+
+Mapping Violence recovers lost and obscured cases of racial violence in Texas from 1900 to 1930, a period of now largely forgotten bloodshed. Making these histories public is a crucial step towards reckoning with the long legacies of violence.
+
+This timeline 
+
+
+
+## CodyHouse and Bootstrap
+This timeline makes use of two existing templates from @CodyHouse and @Bootstrap. The CodyHouse plugin has been incorporated into a one-page Bootstrap template.
 
 All the resources available on CodyHouse are released under the BSD-3-Clause license.
 Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
