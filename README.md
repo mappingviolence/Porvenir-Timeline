@@ -12,11 +12,11 @@ This timeline is adapted from chapter 3, "Denial of Justice", in Monica Muñoz M
   * Review/finish visualizations, and consider any additional sections.
   * Review list of events & add new section for construction/public dedication of the Memorial.
   * Add new background image for hte beginning image (replacing ocean image). Suggestions: map of Texas, desert landscape, image of the memorial
-* Collect images, documents, videos, links, additional content, etc. to add to the timeline. (View spreadsheet for suggestions.)
-⋅⋅* Address footnotes issue - Wiki-style or basic credits within the exhibition would work for now. 
-⋅⋅* Discuss hosting concerns. Can be hosted on GitHub as a .io page for now, but may also be added to mappingviolence.com, as a subdomain somewhere, etc.
-⋅⋅* Review CSS issue to make sure CodyHouse functionality works (see how Vertical Timeline plugin bounces in events in the timeline?)
-⋅⋅* Have someone review this code in its entirety.
+  * Collect images, documents, videos, links, additional content, etc. to add to the timeline. (View spreadsheet for suggestions.)
+  * Address footnotes issue - Wiki-style or basic credits within the exhibition would work for now. 
+  * Discuss hosting concerns. Can be hosted on GitHub as a .io page for now, but may also be added to mappingviolence.com, as a subdomain somewhere, etc.
+  * Review CSS issue to make sure CodyHouse functionality works (see how Vertical Timeline plugin bounces in events in the timeline?)
+  * Have someone review this code in its entirety.
 
 
 ## Credits
